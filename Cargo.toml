@@ -1,0 +1,14 @@
+[package]
+name = "proc_macro_playground"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro=true
+
+[dependencies]
+quote = "1.0.10"
+syn = { version = "1.0.81", features = ["full", "extra-traits"] }
